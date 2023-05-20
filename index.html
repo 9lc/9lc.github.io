@@ -45,7 +45,8 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 30px;
+  padding-top: 20px;
+  padding-right:2%;
   list-style-type: none;
   
 }
@@ -65,18 +66,24 @@ nav a:hover::before {
   width: 100%;
 }
 
-.container2 {
+.containerx {
   position: relative;
   text-align: left;
   color:#000;
-  margin-right: 20% ;
-    margin-left: 20% ;
+  overflow-wrap: break-word;
+  margin:auto;
+  width:80%;
     box-sizing: content-box;
     padding-top:100px;
     height:800px;
+  
 }
-
-
+.container2 {
+margin: auto;
+  width: 60%;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
 .centered {
   position: absolute;
   top: 50%;
@@ -105,75 +112,61 @@ h3 {
     font-size:15px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.img2 {
-    float:right;
-    padding-left:60px;
+img {
+  float:right;
+  width: 50%;
+  height: auto;
 }
 .logo {
-    width:300px;
+    width:40%;
+    max-width: 300px;
     float:left;
     padding-top:25px;
 }
 .intro {
-  font-size:20px;
+  font-size:calc(1vw + 1vh + 1vmin);
   overflow: hidden;
   white-space: nowrap;
-  width: 0;
-  animation: typing;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(50, end);
-  animation-fill-mode: forwards;
+  animation: fadeIn 5s;
 }
 
 .intro2 {
-  font-size:20px;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
+  font-size:calc(1vw + 1vh + 1vmin);
+  overflow-wrap: break-word;
+  animation: fadeIn 5s;
   animation-delay: 0.5s;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(50, end);
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 
 .intro3 {
-  font-size:20px;
+  font-size:calc(1vw + 1vh + 1vmin);
   overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
+  animation: fadeIn 5s;
   animation-delay: 2s;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(50, end);
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 .intro4 {
-  font-size:20px;
+  font-size:calc(1vw + 1vh + 1vmin);
   overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
+  animation: fadeIn 5s;
   animation-delay: 3.6s;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(50, end);
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 .intro5 {
-  font-size:20px;
+  font-size:calc(1vw + 1vh + 1vmin);
   overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
+  animation: fadeIn 5s;
   animation-delay: 4.5s;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(50, end);
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 </style>
@@ -198,34 +191,19 @@ h3 {
     <div class="container2">
         <p class="intro">Hello.</p>
         <br>
-        <br>
         <p class="intro2">My name is Lawrence and I am a third year student studying Data Science and Decisions at UNSW. </p>
-        <br>
         <br>
         <p class="intro3">Welcome to my personal website, where I document all fun things relating to my life, especially tech and data sci! </p>
         <br>
-        <br>
         <p class="intro4">Below you will find all of my completed projects.</p>
-        <br>
         <br>
         <p class="intro5">Enjoy your stay! </p>
     </div>
     <h2>Project Portfolio</h2>
     <div class="container3">    
-        <div class="img2">
-            <img src="project1.png" alt="lol">
-        </div>
-        <h3>Project 1</h3>
-        <text>
-            WIP.</text>
-    </div>
-    <div class="container3">    
-        <div class="img2">
-            <img src="project1.png" alt="lol">
-        </div>
-        <h3>Project 2</h3>
-        <text>
-            WIP</text>
+      <img src="project1.png" alt="lol" >
+      <h3>Project 1</h3>
+      <text>WIP.</text>
     </div>
 </body>
 </html> 
