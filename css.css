@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    font-size:20px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #FFFFFF;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  text-align:center;
+}
+
+nav ul {
+    text-align: right;
+   vertical-align:top;
+   margin: 0;
+   padding: 0;
+  
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 20px;
+  padding-right:2%;
+  list-style-type: none;
+  
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.containerx {
+  position: relative;
+  text-align: left;
+  color:#000;
+  overflow-wrap: break-word;
+  margin:auto;
+  width:80%;
+    box-sizing: content-box;
+    padding-top:100px;
+    height:800px;
+  
+}
+.container2 {
+margin: auto;
+  width: 60%;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+
+}
+.container3 {
+    margin-right: 20% ;
+    margin-left: 20% ;
+    box-sizing: content-box;
+    height:500px;
+}
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size:50px;
+}
+h3 {
+    font-size: max(25px,3vw);
+    padding-top:40px;
+}
+text {
+    font-size: max(1vw, 12px);
+        font-family: 'Work Sans', sans-serif;
+}
+img {
+  float:right;
+  width: 50%;
+  height: auto;
+}
+.logo {
+    width:40%;
+    max-width: 300px;
+    float:left;
+    padding-top:25px;
+}
+.intro {
+  font-size:calc(1vw + 1vh + 1vmin);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fadeIn 5s;
+}
+
+.intro2 {
+  font-size:calc(1vw + 1vh + 1vmin);
+  overflow-wrap: break-word;
+  animation: fadeIn 5s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.intro3 {
+  font-size:calc(1vw + 1vh + 1vmin);
+  overflow: hidden;
+  animation: fadeIn 5s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.intro4 {
+  font-size:calc(1vw + 1vh + 1vmin);
+  overflow: hidden;
+  animation: fadeIn 5s;
+  animation-delay: 3.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.intro5 {
+  font-size:calc(1vw + 1vh + 1vmin);
+  overflow: hidden;
+  animation: fadeIn 5s;
+  animation-delay: 4.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
